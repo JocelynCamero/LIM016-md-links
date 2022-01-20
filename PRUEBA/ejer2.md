@@ -1,7 +1,8 @@
 ## ESTO ES UNA PRUEBA
 
 Redes sociales
-[Instagram](https://www.instagram.com/?hl=es-la)  
+[Instagram](https://www.instam.com/?hl=es-la)  
 cccccccccccccc
-[Facebook](https://www.facebook.com/)
-[Tiktok](https://www.tiktok.com/es)
+[Facebook](https://www.faceok.com/)
+[Tiktok](https://www.tikok.com/es)
+[Lego](https://www.lego.com/es-es/404)

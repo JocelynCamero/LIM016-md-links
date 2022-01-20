@@ -1,6 +1,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import fetch from 'node-fetch';
+import { resolve } from 'path';
 
 
 //FUNCION VERIFICAR SI LA RUTA EXISTE
@@ -69,4 +70,40 @@ const obtenerLinks = (arrArchivosMd) => {
   return arrObjLinks;
 };
 
-console.log(obtenerLinks(buscarArchivosMd(ruta)));
+
+
+//FUNCION QUE OBTIENE UN ARREGLO DE PROMESAS QUE RETORNAN OBJETOS
+const obtenerArregloPromesas = (arrObjLinks) => {
+  const arrPromesas = arrObjLinks.map(obj => {
+    return fetch(obj.href)
+      .then(res => {
+        obj.href;
+        obj.text;
+        obj.file;
+        obj.status = res.status;
+        obj.ok = (res.ok) ? 'OK' : 'FAIL';
+        return obj;
+      })
+      .catch((e) => {
+        obj.href;
+        obj.text;
+        obj.file;
+        obj.status = 500;
+        obj.ok = 'FAIL';
+        obj.message = e;
+        return obj;
+      });
+  }
+  )
+  return arrPromesas;
+};
+
+
+const arrArchivosMd = buscarArchivosMd(ruta);
+const arrObjLinksEncontrados = obtenerLinks(arrArchivosMd);
+
+Promise.all(obtenerArregloPromesas(arrObjLinksEncontrados))
+  .then(response => {
+    console.log(response);
+  });
+

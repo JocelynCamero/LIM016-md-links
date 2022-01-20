@@ -1,3 +1,3 @@
 ## titulo
 
-[facebook](https://www.facebook.com/)
+[facebook](https://www.fb.com/)
