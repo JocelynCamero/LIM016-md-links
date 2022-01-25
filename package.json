@@ -1,23 +1,33 @@
 {
-  "name": "md-links",
+  "name": "mdlinks-jcc",
   "version": "0.1.0",
-  "description": "Creacion de libreria",
+  "description": "Librería para validar links de archivos .md y obtener algunas estadísticas",
   "author": {
     "name": "Jocelyn Camero Cortez",
     "email": "jocelyncamero@gmail.com"
   },
+  "bin": {
+    "md-Links": "src/cli.js"
+  },
+  "keywords": [
+    "markdown",
+    "links"
+  ],
   "license": "MIT",
-  "main": "index.js",
+  "main": "./src/cli.js",
   "engines": {
     "node": "≥ 17.2.0",
     "npm": "≥ 3.0.0"
   },
-  "scripts": {
-    "slint": "eslint ./ --fix",
-    "api": "node src/index.js",
-    "mdLinks": "node src/mdLinks.js"
+  "homepage": "https://github.com/JocelynCamero/LIM016-md-links#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JocelynCamero/LIM016-md-links"
   },
-  "type": "module",
+  "scripts":{
+    "test": "",
+    "slint": "eslint ./ --fix"
+  },
   "devDependencies": {
     "eslint": "^7.32.0",
     "eslint-config-standard": "^16.0.3",
