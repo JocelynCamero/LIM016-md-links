@@ -13,7 +13,9 @@
     "npm": "≥ 3.0.0"
   },
   "scripts": {
-    "slint": "eslint ./ --fix"
+    "slint": "eslint ./ --fix",
+    "api": "node src/index.js",
+    "mdLinks": "node src/mdLinks.js"
   },
   "type": "module",
   "devDependencies": {
