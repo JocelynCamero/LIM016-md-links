@@ -7,6 +7,7 @@ import { help } from './help.js';
 
 
 const argumentos = process.argv;
+const ej;
 
 switch (argumentos.length) {
     case 1:
