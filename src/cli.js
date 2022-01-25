@@ -1,13 +1,12 @@
 #! /usr/bin/env node
 
-import { process } from 'process';
-import { mdLinks } from './mdLinks.js';
+import process from 'process';
+import { mdLinks } from './index.js';
 import { obtenerCantTotalLinks, obtenerCantLinksUnicos, obtenerCantLinksRotos } from './stats.js';
 import { help } from './help.js';
 
 
 const argumentos = process.argv;
-const ej;
 
 switch (argumentos.length) {
     case 1:
@@ -47,7 +46,7 @@ switch (argumentos.length) {
                 })
                 .catch(err => console.log(err));
         }
-        else console.log('Comando invalido');
+        else console.log(' invalido');
         break;
     default:
         console.log('Comando invalido');

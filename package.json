@@ -7,7 +7,7 @@
     "email": "jocelyncamero@gmail.com"
   },
   "bin": {
-    "md-Links": "src/cli.js"
+    "md-Links": "./src/cli.js"
   },
   "keywords": [
     "markdown",
@@ -24,10 +24,11 @@
     "type": "git",
     "url": "https://github.com/JocelynCamero/LIM016-md-links"
   },
-  "scripts":{
+  "scripts": {
     "test": "",
     "slint": "eslint ./ --fix"
   },
+  "type": "module",
   "devDependencies": {
     "eslint": "^7.32.0",
     "eslint-config-standard": "^16.0.3",
@@ -36,6 +37,6 @@
     "eslint-plugin-promise": "^5.2.0"
   },
   "dependencies": {
-    "node-fetch": "^3.1.1"
+    "node-fetch": "^3.2.0"
   }
 }
