@@ -2,52 +2,68 @@
 
 import process from 'process';
 import { mdLinks } from './index.js';
-import { obtenerCantTotalLinks, obtenerCantLinksUnicos, obtenerCantLinksRotos } from './stats.js';
 import { help } from './help.js';
+import {
+    obtenerCantTotalLinks,
+    obtenerCantLinksUnicos,
+    obtenerCantLinksRotos,
+} from './stats.js';
 
+const argumentos = process.argv.slice(2);
 
-const argumentos = process.argv;
+/* if (argumentos.length == 1) {
+    console.log('Ingresar la ruta');
+} */
 
 switch (argumentos.length) {
+    case 0:
+        console.log('Error: Falta ingresar la ruta');
+        break;
     case 1:
-        console.log('Ingresar la ruta');
+        mdLinks('./prueba', { validate: false })
+            .then((res) => {
+                res.forEach((e) =>
+                    console.log(` ${e.href} ${e.text} ${e.file}`)
+                );
+            })
+            .catch((err) => console.log(err));
         break;
     case 2:
-        mdLinks('./prueba', { validate: false })
-            .then(res => console.log(res))
-            .catch(err => console.log(err));
+        if (argumentos[1] == '--validate') {
+            mdLinks('./prueba', { validate: true })
+                .then((res) => {
+                    res.forEach((e) =>
+                        console.log(
+                            ` ${e.href}   ${e.text}   ${e.file}   ${e.status}   ${e.ok}`
+                        )
+                    );
+                })
+                .catch((err) => console.log(err));
+        } else if (argumentos[1] == '--stats') {
+            mdLinks('./prueba', { validate: true })
+                .then((res) => {
+                    console.log(`Total: ${obtenerCantTotalLinks(res)}`);
+                    console.log(`Unique: ${obtenerCantLinksUnicos(res)}`);
+                })
+                .catch((err) => console.log(err));
+        } else if (argumentos[1] == '--help') {
+            console.log(help);
+        } else console.log('Comando invalido');
         break;
     case 3:
-        if (argumentos[2] == '--validate') {
+        if (
+            (argumentos[1] == '--validate' && argumentos[2] == '--stats') ||
+            (argumentos[1] == '--stats' && argumentos[2] == '--validate')
+        ) {
             mdLinks('./prueba', { validate: true })
-                .then(res => console.log(res))
-                .catch(err => console.log(err));
-        }
-        if (argumentos[2] == '--stats') {
-            mdLinks('./prueba', { validate: true })
-                .then(res => {
-                    console.log(obtenerCantTotalLinks('Total: ', res));
-                    console.log(obtenerCantLinksUnicos('Unique: ', res));
+                .then((res) => {
+                    console.log(`Total: ${obtenerCantTotalLinks(res)}`);
+                    console.log(`Unique: ${obtenerCantLinksUnicos(res)}`);
+                    console.log(`Broken: ${obtenerCantLinksRotos(res)}`);
                 })
-                .catch(err => console.log(err));
-        }
-        if (argumentos[2] == '--help') {
-            console.log(help);
-        }
-        else console.log('Comando invalido');
-        break;
-    case 4:
-        if ((argumentos[2] == '--validate' && argumentos[3] == '--stats') || (argumentos[2] == '--stats' && argumentos[3] == '--validate')) {
-            mdLinks('./prueba', { validate: true })
-                .then(res => {
-                    console.log(obtenerCantTotalLinks('Total: ', res));
-                    console.log(obtenerCantLinksUnicos('Unique: ', res));
-                    console.log(obtenerCantLinksRotos('Broken: ', res));
-                })
-                .catch(err => console.log(err));
-        }
-        else console.log(' invalido');
+                .catch((err) => console.log(err));
+        } else console.log(' invalido');
         break;
     default:
-        console.log('Comando invalido');
+        console.log('error en la cantidad de datos ');
 }
