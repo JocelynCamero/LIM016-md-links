@@ -2,15 +2,15 @@
 
 ## Indice
 
--   [1. Resumen del proyecto](#1-preámbulo)
+- [1. Resumen del proyecto](#1-preámbulo)
 
--   [2. Diagramas de flujo](#2-Resumen-del-proyecto)
+- [2. Diagramas de flujo](#2-Resumen-del-proyecto)
 
--   [3. Instalación y uso de la librería](#3-criterios-del-proyecto)
+- [3. Instalación y uso de la librería](#3-criterios-del-proyecto)
 
--   [4. Objetivos de aprendizaje](#4-consideraciones-t%C3%A9cnicas)
+- [4. Objetivos de aprendizaje](#4-consideraciones-t%C3%A9cnicas)
 
--   [5. Checklist de criterios cumplidos](#5-checklist-de-criterios-cumplidos)
+- [5. Checklist de criterios cumplidos](#5-checklist-de-criterios-cumplidos)
 
 ### 1. Resumen del proyecto
 
@@ -21,36 +21,11 @@ Esta librería buscará archivos de tipo **.md** dentro de la ruta que se le pas
 
 #### 2.1 Diagrama API
 
-```mermaid
-graph
-A(INCIO) --> B[Obtener ruta]
-B --> D{Existe la ruta?}
-D -- SI --> E[Convertir a ruta absoluta]
-D -- NO --> F[Mensaje 'La ruta no existe']
-F --> P
-E --> G{La ruta es una carpeta?}
-G -- SI --> H[Buscar archivos .md]
-G -- NO --> Z{El archivo es .md?}
-Z -- SI --> J
-Z -- NO --> Y[Mensaje 'El archivo no es .md']
-Y --> P
-H --> I{Existen archivos .md?}
-I -- NO --> X[Mensaje 'No hay archivos .md]
-I -- SI --> J[Buscar links]
-X --> P
-J --> K{Tiene links?}
-K -- SI --> L[Almacenar url, texto y ruta en un objeto]
-K -- NO --> W[Mensaje 'No existen links en el archivo']
-W --> P
-L --> M[Obtener y almacenar el status de la url]
-M --> N{El status de la URL es menor a 400?}
-N -- SI --> O[Agregar mensaje 'ok']
-N -- NO --> V[Agregar mensaje 'fail']
-V --> P
-O --> P(FIN)
-```
+![]()
 
 #### 2.2 Diagrama CLI
+
+![]()
 
 ### 3. Instalación y uso de la librería
 
@@ -58,100 +33,100 @@ O --> P(FIN)
 
 ### JavaScript
 
--   [ ] **Diferenciar entre tipos de datos primitivos y no primitivos**
+- [ ] **Diferenciar entre tipos de datos primitivos y no primitivos**
 
--   [x] **Arrays (arreglos)**
+- [x] **Arrays (arreglos)**
 
--   [x] **Objetos (key, value)**
+- [x] **Objetos (key, value)**
 
--   [x] **Uso de condicionales (if-else, switch, operador ternario, lógica booleana)**
+- [x] **Uso de condicionales (if-else, switch, operador ternario, lógica booleana)**
 
--   [x] **Funciones (params, args, return)**
+- [x] **Funciones (params, args, return)**
 
--   [ ] **Recursión o recursividad**
+- [ ] **Recursión o recursividad**
 
--   [x] **Módulos de CommonJS**
+- [x] **Módulos de CommonJS**
 
--   [ ] **Diferenciar entre expresiones (expressions) y sentencias (statements)**
+- [ ] **Diferenciar entre expresiones (expressions) y sentencias (statements)**
 
--   [ ] **Callbacks**
+- [ ] **Callbacks**
 
--   [ ] **Promesas**
+- [ ] **Promesas**
 
--   [ ] **Pruebas unitarias (unit tests)**
+- [ ] **Pruebas unitarias (unit tests)**
 
--   [ ] **Pruebas asíncronas**
+- [ ] **Pruebas asíncronas**
 
--   [ ] **Uso de mocks y espías**
+- [ ] **Uso de mocks y espías**
 
--   [ ] **Pruebas de compatibilidad en múltiples entornos de ejecución**
+- [ ] **Pruebas de compatibilidad en múltiples entornos de ejecución**
 
--   [x] **Uso de linter (ESLINT)**
+- [x] **Uso de linter (ESLINT)**
 
--   [x] **Uso de identificadores descriptivos (Nomenclatura y Semántica)**
+- [x] **Uso de identificadores descriptivos (Nomenclatura y Semántica)**
 
 ### Node.js
 
--   [x] **Instalar y usar módulos con npm**
+- [x] **Instalar y usar módulos con npm**
 
--   [x] **Configuración de package.json**
+- [x] **Configuración de package.json**
 
--   [ ] **Configuración de npm-scripts**
+- [ ] **Configuración de npm-scripts**
 
--   [ ] **process (env, argv, stdin-stdout-stderr, exit-code)**
+- [ ] **process (env, argv, stdin-stdout-stderr, exit-code)**
 
--   [x] **File system (fs, path)**
+- [x] **File system (fs, path)**
 
 ### Control de Versiones (Git y GitHub)
 
--   [x] **Git: Instalación y configuración**
+- [x] **Git: Instalación y configuración**
 
--   [x] **Git: Control de versiones con git (init, clone, add, commit, status, push, pull, remote)**
+- [x] **Git: Control de versiones con git (init, clone, add, commit, status, push, pull, remote)**
 
--   [ ] **Git: Integración de cambios entre ramas (branch, checkout, fetch, merge, reset, rebase, tag)**
+- [ ] **Git: Integración de cambios entre ramas (branch, checkout, fetch, merge, reset, rebase, tag)**
 
--   [ ] **GitHub: Creación de cuenta y repos, configuración de llaves SSH**
+- [ ] **GitHub: Creación de cuenta y repos, configuración de llaves SSH**
 
--   [x] **GitHub: Despliegue con GitHub Pages**
+- [x] **GitHub: Despliegue con GitHub Pages**
 
--   [ ] **GitHub: Colaboración en Github (branches | forks | pull requests | code review | tags)**
+- [ ] **GitHub: Colaboración en Github (branches | forks | pull requests | code review | tags)**
 
--   [x] **GitHub: Organización en Github (projects | issues | labels | milestones | releases)**
+- [x] **GitHub: Organización en Github (projects | issues | labels | milestones | releases)**
 
 ### HTTP
 
--   [ ] **Consulta o petición (request) y respuesta (response).**
+- [ ] **Consulta o petición (request) y respuesta (response).**
 
--   [x] **Codigos de status de HTTP**
+- [x] **Codigos de status de HTTP**
 
 ### 5. Checklist de criterios cumplidos
 
 ### General
 
--   [ ] Puede instalarse via `npm install --global <github-user>/md-links`
+- [ ] Puede instalarse via `npm install --global <github-user>/md-links`
 
 ### `README.md`
 
--   [ ] Un board con el backlog para la implementación de la librería.
--   [ ] Documentación técnica de la librería.
--   [ ] Guía de uso e instalación de la librería
+- [ ] Un board con el backlog para la implementación de la librería.
+- [ ] Documentación técnica de la librería.
+- [ ] Guía de uso e instalación de la librería
 
 ### API `mdLinks(path, opts)`
 
--   [ ] El módulo exporta una función con la interfaz (API) esperada.
--   [ ] Implementa soporte para archivo individual
--   [ ] Implementa soporte para directorios
--   [ ] Implementa `options.validate`
+- [ ] El módulo exporta una función con la interfaz (API) esperada.
+- [ ] Implementa soporte para archivo individual
+- [ ] Implementa soporte para directorios
+- [ ] Implementa `options.validate`
 
 ### CLI
 
--   [ ] Expone ejecutable `md-links` en el path (configurado en `package.json`)
--   [ ] Se ejecuta sin errores / output esperado
--   [ ] Implementa `--validate`
--   [ ] Implementa `--stats`
+- [ ] Expone ejecutable `md-links` en el path (configurado en `package.json`)
+- [ ] Se ejecuta sin errores / output esperado
+- [ ] Implementa `--validate`
+- [ ] Implementa `--stats`
 
 ### Pruebas / tests
 
--   [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions,
-        lines, y branches.
--   [ ] Pasa tests (y linters) (`npm test`).
+- [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions,
+      lines, y branches.
+- [ ] Pasa tests (y linters) (`npm test`).
