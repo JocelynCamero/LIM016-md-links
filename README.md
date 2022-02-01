@@ -35,27 +35,27 @@ Esta librería buscará archivos de tipo **.md** dentro de la ruta que se le pas
 
 #### 3.2 Uso de la librería
 
-- En la terminal ingresamos el comando md-Links seguido de la ruta de la ubicación del archivo y/o carpeta en la cual se buscara los links.
+- En la terminal ingresamos el comando **md-Links** seguido de la **ruta** de la ubicación del archivo y/o carpeta en la cual se buscara los links.
   Ejemplo:
 
 ![](https://github.com/JocelynCamero/LIM016-md-links/blob/main/imagenes/ruta%20sin%20opcion.png)
 
-- Ingresando el comando md-Links seguido de la ruta y seguido del comando --validate, obtendremos las propiedades de los links encontrados.
+- Ingresando el comando **md-Links** seguido de la **ruta** y seguido del comando **--validate**, obtendremos las propiedades de los links encontrados.
   Ejemplo:
 
 ![](https://github.com/JocelynCamero/LIM016-md-links/blob/main/imagenes/--validate.png)
 
-- Ingresando el comando md-Links seguido de la ruta y seguido del comando --stats, obtendremos algunos datos estadisticos(total de links y cantidad de links unicos).
+- Ingresando el comando **md-Links** seguido de la **ruta** y seguido del comando **--stats**, obtendremos algunos datos estadisticos(total de links y cantidad de links unicos).
   Ejemplo:
 
 ![](https://github.com/JocelynCamero/LIM016-md-links/blob/main/imagenes/--stats.png)
 
-- Ingresando el comando md-Links seguido de la ruta y seguido de los comandos --stats --validate o --validate --stats, obtendremos la cantidad total de links que encontremos en ese archivo, el total de links unicos encontrados y el total de links rotos.
+- Ingresando el comando **md-Links** seguido de la **ruta** y seguido de los comandos **--stats --validate** o **--validate --stats**, obtendremos la cantidad total de links que encontremos en ese archivo, el total de links unicos encontrados y el total de links rotos.
   Ejemplo:
 
 ![](https://github.com/JocelynCamero/LIM016-md-links/blob/main/imagenes/--validate%20--stats.png)
 
-- Ingresando el comando md-Links seguido de la ruta y seguido del comando --help, obtendremos una tabla con ayuda.
+- Ingresando el comando **md-Links** seguido de la **ruta** y seguido del comando **--help**, obtendremos una tabla con ayuda.
   Ejemplo:
 
 ![](https://github.com/JocelynCamero/LIM016-md-links/blob/main/imagenes/--help.png)
