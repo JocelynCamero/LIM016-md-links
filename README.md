@@ -21,11 +21,11 @@ Esta librería buscará archivos de tipo **.md** dentro de la ruta que se le pas
 
 #### 2.1 Diagrama API
 
-![]()
+![](https://github.com/JocelynCamero/LIM016-md-links/blob/main/imagenes/DIAGRAMA%20FLUJO%20API.jpg)
 
 #### 2.2 Diagrama CLI
 
-![]()
+![](https://github.com/JocelynCamero/LIM016-md-links/blob/main/imagenes/DIAGRAMA%20FLUJO%20CLI.jpg)
 
 ### 3. Instalación y uso de la librería
 
@@ -33,7 +33,7 @@ Esta librería buscará archivos de tipo **.md** dentro de la ruta que se le pas
 
 ### JavaScript
 
-- [ ] **Diferenciar entre tipos de datos primitivos y no primitivos**
+- [x] **Diferenciar entre tipos de datos primitivos y no primitivos**
 
 - [x] **Arrays (arreglos)**
 
@@ -43,25 +43,25 @@ Esta librería buscará archivos de tipo **.md** dentro de la ruta que se le pas
 
 - [x] **Funciones (params, args, return)**
 
-- [ ] **Recursión o recursividad**
+- [x] **Recursión o recursividad**
 
 - [x] **Módulos de CommonJS**
 
-- [ ] **Diferenciar entre expresiones (expressions) y sentencias (statements)**
+- [x] **Diferenciar entre expresiones (expressions) y sentencias (statements)**
 
-- [ ] **Callbacks**
+- [x] **Callbacks**
 
-- [ ] **Promesas**
+- [x] **Promesas**
 
-- [ ] **Pruebas unitarias (unit tests)**
+- [x] **Pruebas unitarias (unit tests)**
 
-- [ ] **Pruebas asíncronas**
+- [x] **Pruebas asíncronas**
 
 - [ ] **Uso de mocks y espías**
 
 - [ ] **Pruebas de compatibilidad en múltiples entornos de ejecución**
 
-- [x] **Uso de linter (ESLINT)**
+- [ ] **Uso de linter (ESLINT)**
 
 - [x] **Uso de identificadores descriptivos (Nomenclatura y Semántica)**
 
@@ -71,9 +71,9 @@ Esta librería buscará archivos de tipo **.md** dentro de la ruta que se le pas
 
 - [x] **Configuración de package.json**
 
-- [ ] **Configuración de npm-scripts**
+- [x] **Configuración de npm-scripts**
 
-- [ ] **process (env, argv, stdin-stdout-stderr, exit-code)**
+- [x] **process (env, argv, stdin-stdout-stderr, exit-code)**
 
 - [x] **File system (fs, path)**
 
@@ -91,7 +91,7 @@ Esta librería buscará archivos de tipo **.md** dentro de la ruta que se le pas
 
 - [ ] **GitHub: Colaboración en Github (branches | forks | pull requests | code review | tags)**
 
-- [x] **GitHub: Organización en Github (projects | issues | labels | milestones | releases)**
+- [ ] **GitHub: Organización en Github (projects | issues | labels | milestones | releases)**
 
 ### HTTP
 
@@ -113,20 +113,20 @@ Esta librería buscará archivos de tipo **.md** dentro de la ruta que se le pas
 
 ### API `mdLinks(path, opts)`
 
-- [ ] El módulo exporta una función con la interfaz (API) esperada.
-- [ ] Implementa soporte para archivo individual
-- [ ] Implementa soporte para directorios
-- [ ] Implementa `options.validate`
+- [x] El módulo exporta una función con la interfaz (API) esperada.
+- [x] Implementa soporte para archivo individual
+- [x] Implementa soporte para directorios
+- [x] Implementa `options.validate`
 
 ### CLI
 
-- [ ] Expone ejecutable `md-links` en el path (configurado en `package.json`)
-- [ ] Se ejecuta sin errores / output esperado
-- [ ] Implementa `--validate`
-- [ ] Implementa `--stats`
+- [x] Expone ejecutable `md-links` en el path (configurado en `package.json`)
+- [x] Se ejecuta sin errores / output esperado
+- [x] Implementa `--validate`
+- [x] Implementa `--stats`
 
 ### Pruebas / tests
 
-- [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions,
+- [x] Pruebas unitarias cubren un mínimo del 70% de statements, functions,
       lines, y branches.
-- [ ] Pasa tests (y linters) (`npm test`).
+- [x] Pasa tests (y linters) (`npm test`).
