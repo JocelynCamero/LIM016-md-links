@@ -7,7 +7,7 @@
     "email": "jocelyncamero@gmail.com"
   },
   "bin": {
-    "md-Links": "./src/cli.js"
+    "md-links": "./src/cli.js"
   },
   "keywords": [
     "markdown",
