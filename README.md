@@ -2,13 +2,13 @@
 
 ## Indice
 
-- [1. Resumen del proyecto](#1-preámbulo)
+- [1. Resumen del proyecto](#1-resumen-del-proyecto)
 
-- [2. Diagramas de flujo](#2-Resumen-del-proyecto)
+- [2. Diagramas de flujo](#2-diagramas-de-flujo)
 
-- [3. Instalación y uso de la librería](#3-criterios-del-proyecto)
+- [3. Instalación y uso de la librería](#3-instalación-y-uso-de-la-librería)
 
-- [4. Objetivos de aprendizaje](#4-consideraciones-t%C3%A9cnicas)
+- [4. Objetivos de aprendizaje](#4-objetivos-de-aprendizaje)
 
 - [5. Checklist de criterios cumplidos](#5-checklist-de-criterios-cumplidos)
 
@@ -92,7 +92,7 @@ Esta librería buscará archivos de tipo **.md** dentro de la ruta que se le pas
 
 - [ ] **Pruebas de compatibilidad en múltiples entornos de ejecución**
 
-- [ ] **Uso de linter (ESLINT)**
+- [x] **Uso de linter (ESLINT)**
 
 - [x] **Uso de identificadores descriptivos (Nomenclatura y Semántica)**
 
@@ -138,9 +138,9 @@ Esta librería buscará archivos de tipo **.md** dentro de la ruta que se le pas
 
 ### `README.md`
 
-- [ ] Un board con el backlog para la implementación de la librería.
-- [ ] Documentación técnica de la librería.
-- [ ] Guía de uso e instalación de la librería
+- [x] Un board con el backlog para la implementación de la librería.
+- [x] Documentación técnica de la librería.
+- [x] Guía de uso e instalación de la librería
 
 ### API `mdLinks(path, opts)`
 
